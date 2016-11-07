@@ -79,7 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <p>Laravel version 5.3.22</p>
+                    <p>DuPo Coming すーん</p>>
                 </div>
 
                 <div class="links">
