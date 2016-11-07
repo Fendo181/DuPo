@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <p>Laravel version 5.3.22</p>
+                    <p>Laravel 5.3</p>
                     <h4>DuPo Coming すーん</h4>
                 </div>
 
