@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    font-family:'Century Gothic';
+}
+
+.pen_marker{
+     background: linear-gradient(transparent 60%, #ff0 0%);
+}
+
+
+.container{
+    width: 760px;
+    margin:0 auto;
+}
+
+h1{
+    font-size: 32px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+p1{
+    font-size: 18px;
+    font-family:cursive,sans-serif;
+    font-weight:bolder;
+    
+}
+
+ul>li{
+    padding: 3px 0;
+}
+
+.pull-right{
+    float: right;
+}
+
+.fs12{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+iput[type=text]{
+    width: 200px;
+    padding: 5px;
+}
+
+input[type=submit]{
+    width: 100px;
+}
+
+textarea{
+    padding: 5px;
+    width: 350px;
+    height:auto 80px;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.flash_message{
+    text-align: center;
+    padding: 5px;
+    color:blasck;
+    background:skyblue;
+    
+}
+
+.error{
+    font-size:12px;
+    color: tomato;
+    padding: 3px 0;
+    display: block;
+}
+
+
+a {
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+
