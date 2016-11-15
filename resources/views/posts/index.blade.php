@@ -10,6 +10,8 @@ Blog Posts
 <!-- <h1>Welcome EndoBlog!</h1> -->
 @endsection
 
+<h1>WelCome DuPo</h1>
+
 @section('img1')
 <img src="/assets/img/top.png" alt="" width="800" height="600">
 @endsection
@@ -27,7 +29,7 @@ Blog Posts
 
 
 @section('content')
-<h1>WelCome DuPo</h1>
+<h1>Coming Soon</h1>
 @endsection
 
 
