@@ -24,13 +24,6 @@ Blog Posts
     <a href="{{ url('/aboutme') }}">About me</a>
 @endsection
 
-<!-- @section('git')
-    <a href="{{ url('https://github.com/Fendo181/Laravel_repos') }}">Souce Code(GitHub)</a>
-@endsection -->
-
-<!-- @section('Dot')
-    <a href="{{ url('/Dot') }}">その他のコンテンツ(簡易掲示板)</a>
-@endsection -->
 
 
 @section('content')
