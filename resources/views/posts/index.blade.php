@@ -17,7 +17,7 @@ Blog Posts
 
 
 @section('about')
-    <a href="{{ url('/about') }}">遠藤ブログの使い方</a>
+    <a href="{{ url('/about') }}">DuPoの使い方</a>
 @endsection
 
 @section('aboutme')
