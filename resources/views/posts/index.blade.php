@@ -11,7 +11,7 @@ Blog Posts
 @endsection
 
 @section('img1')
-<img src="/assets/img/top.png" alt="" width="600" height="400">
+<img src="/assets/img/top.png" alt="" width="800" height="600">
 @endsection
 
 
@@ -24,17 +24,17 @@ Blog Posts
     <a href="{{ url('/aboutme') }}">About me</a>
 @endsection
 
-@section('git')
+<!-- @section('git')
     <a href="{{ url('https://github.com/Fendo181/Laravel_repos') }}">Souce Code(GitHub)</a>
-@endsection
+@endsection -->
 
-@section('Dot')
+<!-- @section('Dot')
     <a href="{{ url('/Dot') }}">その他のコンテンツ(簡易掲示板)</a>
-@endsection
+@endsection -->
 
 
 @section('content')
-<h1>Wel Come DuPO</h1>
+<h1>WelCome DuPo</h1>
 @endsection
 
 
