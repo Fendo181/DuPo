@@ -2,11 +2,15 @@ body{
     margin: 0;
     padding: 0;
     font-size: 19px;
-    font-family:'Century Gothic';
+    font-family:"Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
 .pen_marker{
      background: linear-gradient(transparent 60%, #ff0 0%);
+}
+
+.title{
+    font-size: 80%;
 }
 
 
@@ -15,17 +19,22 @@ body{
     margin:0 auto;
 }
 
+.center{
+  border: 1px solid #aaa;
+  width: 760px;
+  text-align: center;
+}
+
 h1{
     font-size: 32px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
 }
 
-p1{
+p{
     font-size: 18px;
     font-family:cursive,sans-serif;
     font-weight:bolder;
-    
 }
 
 ul>li{
@@ -41,7 +50,7 @@ ul>li{
     font-weight: normal;
 }
 
-iput[type=text]{
+input[type=text]{
     width: 200px;
     padding: 5px;
 }
@@ -54,9 +63,10 @@ textarea{
     padding: 5px;
     width: 350px;
     height:auto 80px;
-    
+
 }
 
+/*フラッシュメッセージ*/
 .hidden{
     display: none;
 }
@@ -66,9 +76,10 @@ textarea{
     padding: 5px;
     color:blasck;
     background:skyblue;
-    
+
 }
 
+/*バリデーションのエラーメッセージのcss*/
 .error{
     font-size:12px;
     color: tomato;
@@ -77,10 +88,9 @@ textarea{
 }
 
 
-a {
+a h2 {
 text-decoration: none;
 }
-a:hover {
+a h2:hover {
 text-decoration: underline;
 }
-

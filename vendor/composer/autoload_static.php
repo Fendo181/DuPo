@@ -278,9 +278,7 @@ class ComposerStaticInit3442422d03aadd4715d864962cd40da2
     );
 
     public static $classMap = array (
-        'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
-        'CreatePostsTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_15_071527_create_posts_table.php',
-        'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
+        'CreatedNiposTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_23_082850_created_nipos_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
@@ -805,6 +803,7 @@ class ComposerStaticInit3442422d03aadd4715d864962cd40da2
         'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => __DIR__ . '/..' . '/sebastian/recursion-context/src/InvalidArgumentException.php',
         'SebastianBergmann\\ResourceOperations\\ResourceOperations' => __DIR__ . '/..' . '/sebastian/resource-operations/src/ResourceOperations.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'SummaryToTable' => __DIR__ . '/../..' . '/database/migrations/2016_11_23_084348_summary_to_table.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
     );

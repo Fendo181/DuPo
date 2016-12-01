@@ -4,20 +4,21 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostsTable extends Migration
+class CreatedNiposTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    //  uｐではここでやりたい事をどんどんやっていく
+
+    //  ここではやりたい事を記述する。
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('nipos', function (Blueprint $table) {
             $table->increments('id');
-            $table->increments('title');
-            $table->increments('body');
+            $table->string('title');
+            $table->text('body');
             $table->timestamps();
         });
     }
@@ -27,8 +28,10 @@ class CreatePostsTable extends Migration
      *
      * @return void
      */
+
+    // ここではやり直したい事を記述する。
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('nipos');
     }
 }

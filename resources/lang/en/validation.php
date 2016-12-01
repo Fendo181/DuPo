@@ -99,6 +99,9 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'email' => [
+            'required' => 'メールアドレスを入力してください',
+        ],
     ],
 
     /*
