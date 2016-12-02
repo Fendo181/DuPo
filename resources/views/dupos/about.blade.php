@@ -19,5 +19,7 @@
 @endsection
 
 @section('back')
-    <a href="{{ url('/') }}">Back Home</a>
+    <div class="center">
+        <a href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
+    </div>
 @endsection

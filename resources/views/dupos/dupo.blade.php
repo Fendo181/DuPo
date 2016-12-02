@@ -14,7 +14,7 @@ Dupo
 <!-- 記事を書く -->
 <span class="pen_marker">
     Start Dupo!→
-    <a href="{{ url('/dupo/create') }}" class="fs12">[New DuPo]</a>
+    <a href="{{ url('/dupo/create') }}" class="fs12"><i class="fa fa-fw fa-pencil-square-o" aria-hidden="true"></i>New DuPo</a>
 </span>
 
 <!-- @foreach ($nipos as $nipo)
@@ -26,12 +26,12 @@ Dupo
 {{-- タイトルだけ表示する。 --}}
 <li>
     <p>投稿日:{{ $nipo->created_at }}</p>
-    <a href="{{ action('DupoController@show', $nipo->id) }}">{{ $nipo->title }}</a>
-    <a href="{{ action('DupoController@edit', $nipo->id) }}" class="fs12">[編集する]</a>
+    <a href="{{ action('DupoController@show', $nipo->id) }}">『{{ $nipo->title }}』</a>
+    <a href="{{ action('DupoController@edit', $nipo->id) }}" class="fs12"><i class="fa fa-fw fa-pencil" aria-hidden="true"></i></a>
     <form action="{{ action('DupoController@destroy', $nipo->id) }}" id="form_{{ $nipo->id }}" method="post" style="display:inline">
        {{ csrf_field() }}
        {{ method_field('delete') }}
-     <a href="#" data-id="{{ $nipo->id }}" onclick="deletePost(this);" class="fs12">[削除する]</a>
+     <a href="#" data-id="{{ $nipo->id }}" onclick="deletePost(this);" class="fs12"><i class="fa fa-fw fa-times" aria-hidden="true"></i></a>
    </form>
 </li>
 
@@ -48,4 +48,10 @@ function deletePost(e) {
   }
 }
 </script>
+@endsection
+
+@section('back')
+    <div class="center">
+        <a href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
+    </div>
 @endsection

@@ -32,6 +32,13 @@ p{
     font-weight:bolder;
 }
 
+a{
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+
 ul>li{
     padding: 3px 0;
 }

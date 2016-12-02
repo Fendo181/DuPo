@@ -7,8 +7,10 @@
     <title>@yield('title')</title>
      <!-- CSS-->
      <!-- 吐き気を催すCSSだ死ね -->
-     <link rel="stylesheet" href="\assets\css\rest.css">
+     <link rel="stylesheet" href="\assets\css\reset.css">
      <link rel="stylesheet" href="\assets\css\styeles.css">
+     <!-- Awsomeアイコン -->
+     <script src="https://use.fontawesome.com/3f882b3f5b.js"></script>
 
      </div
 </head>

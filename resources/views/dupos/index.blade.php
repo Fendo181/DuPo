@@ -9,6 +9,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <!-- Awsomeアイコン -->
+        <script src="https://use.fontawesome.com/3f882b3f5b.js"></script>
 
         <!-- Styles -->
         <style>
@@ -52,7 +54,7 @@
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 12px;
+                font-size: 18px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -62,35 +64,74 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .btn {
+                background: #EEE;
+                border: 1px solid #DDD;
+                border-radius: 8px;
+                -moz-border-radius: 8px;
+                -webkit-border-radius: 8px;
+                color: #111;
+                width: 100px;
+                padding: 10px 0;
+            }
+
+            .btn_a {
+                background: #5298c4;
+                border: 1px solid #DDD;
+                border-radius: 8px;
+                -moz-border-radius: 8px;
+                -webkit-border-radius: 8px;
+                color: #111;
+                width: 100px;
+                padding: 10px 0;
+            }
+
+            .btn_b {
+                background: #55c452;
+                border: 1px solid #DDD;
+                border-radius: 8px;
+                -moz-border-radius: 8px;
+                -webkit-border-radius: 8px;
+                color: #111;
+                width: 100px;
+                padding: 10px 0;
+            }
+
+            .btn_c {
+                background: #eccf51;
+                border: 1px solid #DDD;
+                border-radius: 8px;
+                -moz-border-radius: 8px;
+                -webkit-border-radius: 8px;
+                color: #111;
+                width: 100px;
+                padding: 10px 0;
+            }
+
+            .btn_d {
+                background: #fb743a;
+                border: 1px solid #DDD;
+                border-radius: 8px;
+                -moz-border-radius: 8px;
+                -webkit-border-radius: 8px;
+                color: #111;
+                width: 100px;
+                padding: 10px 0;
+            }
+
+
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
             <div class="content">
                 <div class="title m-b-md">
                     <p>DuPo</a>
                 </div>
-                <div class="">
-
-                </div>
-
                 <div class="links">
-                    <a href="https://github.com/laravel/laravel">GitHub(Laravel)</a>
-                    <a href="#">GitHub(DuPo)</a>
-                    <a href="{{ url('/about') }}">DuPoとは?</a>
-                    <a href="{{ url('/aboutme') }}">About me</a>
-                    <a href=""></a>
+                    <a class="btn_a" href="{{ url('/dupo') }}"><i class="fa fa-fw fa-book" aria-hidden="true"></i>Let's DuPo</a>
+                    <a class="btn_b" href="{{ url('/about') }}"><i class="fa fa-fw fa-question" aria-hidden="true"></i>DuPoとは?</a>
+                    <a class="btn_d" href="{{ url('/aboutme') }}"><i class="fa fa-fw fa-male" aria-hidden="true"></i>About me</a>
+                    <a class="btn_c" href="https://github.com/Fendo181/DuPo"><i class="fa fa-fw fa-github" aria-hidden="true"></i>GitHub</a>
                 </div>
             </div>
         </div>

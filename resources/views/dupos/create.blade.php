@@ -6,7 +6,9 @@ Add New
 
 
 @section('blog_title')
-<h2 class="title">『Add DuPo』</h2>
+<div class="center">
+    <h2 class="title">『Add DuPo』</h2>
+</div>
 @endsection
 
 
@@ -41,5 +43,5 @@ Add New
 @endsection
 
 @section('back')
-    <a href="{{ url('/') }}" >Back Home</a>
+    <a href="{{ url('/dupo') }}"><i class="fa fa-fw fa-book" aria-hidden="true"></i>Back DuPo Page</a>
 @endsection

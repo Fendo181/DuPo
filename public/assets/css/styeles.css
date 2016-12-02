@@ -3,17 +3,24 @@
     margin:0 auto;
 }
 
+
 .pen_marker{
      background: linear-gradient(transparent 60%, #ff0 0%);
 }
 
+
 .title{
-    font-size: 80%;
+    font-family: inherit;
+}
+
+.text{
+    font-family: sans-serif;
+    text-align:left;
 }
 
 
 .center{
-  border: 1px solid #aaa;
+  border: 2px;
   width: 760px;
   text-align: center;
 }
@@ -46,12 +53,4 @@
     color: tomato;
     padding: 3px 0;
     display: block;
-}
-
-
-a h2 {
-text-decoration: none;
-}
-a h2:hover {
-text-decoration: underline;
 }

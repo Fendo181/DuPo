@@ -1,13 +1,17 @@
 @extends('layouts.default')
 
 @section('title')
-Add New
+Edit
 @endsection
 
 
 @section('blog_title')
-<h2 class="title">『Add DuPo』</h2>
+<div class="center">
+    <h2 class="title">『Edit DuPo』</h2>
+</div>
 @endsection
+
+
 
 @section('content')
 <div class="center">
@@ -33,12 +37,12 @@ Add New
             @endif
         </p>
         <p>
-            <input type="submit" value="記事を投稿する。">
+            <input type="submit" value="記事を投稿する。" >
         </p>
     </form>
 </div>
 @endsection
 
 @section('back')
-    <a href="{{ url('/') }}" >Back Home</a>
+    <a href="{{ url('/dupo') }}"><i class="fa fa-fw fa-book" aria-hidden="true"></i>Back DuPo Page</a>
 @endsection
