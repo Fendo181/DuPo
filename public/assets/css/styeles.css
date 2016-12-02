@@ -1,8 +1,6 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 19px;
-    font-family:"Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+.container{
+    width: 760px;
+    margin:0 auto;
 }
 
 .pen_marker{
@@ -14,31 +12,10 @@ body{
 }
 
 
-.container{
-    width: 760px;
-    margin:0 auto;
-}
-
 .center{
   border: 1px solid #aaa;
   width: 760px;
   text-align: center;
-}
-
-h1{
-    font-size: 32px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
-}
-
-p{
-    font-size: 18px;
-    font-family:cursive,sans-serif;
-    font-weight:bolder;
-}
-
-ul>li{
-    padding: 3px 0;
 }
 
 .pull-right{
@@ -48,22 +25,6 @@ ul>li{
 .fs12{
     font-size: 20px;
     font-weight: normal;
-}
-
-input[type=text]{
-    width: 200px;
-    padding: 5px;
-}
-
-input[type=submit]{
-    width: 100px;
-}
-
-textarea{
-    padding: 5px;
-    width: 350px;
-    height:auto 80px;
-
 }
 
 /*フラッシュメッセージ*/
