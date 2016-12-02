@@ -1,5 +1,6 @@
 /node_modules
 /public/storage
+/pubilc/casablanca/*
 /storage/*.key
 #/vendor
 /.idea
