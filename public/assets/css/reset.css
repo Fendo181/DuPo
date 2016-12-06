@@ -17,7 +17,8 @@ body{
     margin: 0;
     padding: 0;
     font-size: 19px;
-    font-family:"Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    /*font-family:"Hiragino Kaku Gothic ProN","メイリオ", sans-serif;*/
+    font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
 }
 
 h1{
@@ -27,7 +28,7 @@ h1{
 }
 
 p{
-    font-size: 18px;
+    /*font-size: 18px;*/
     font-family:cursive,sans-serif;
     font-weight:bolder;
 }

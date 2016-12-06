@@ -31,11 +31,14 @@ Route::get('/about','IndexController@about');
 // URL(localhost/about)にアクセスしたら,getでIndexContorollerにaboutmeメソッドを呼び出す。
 Route::get('/aboutme','IndexController@aboutme');
 
+
+
 // URL(localhost/dd)画面にアクセスしたら、にgetでdupoContollerのindexメソッドを呼び出す
 Route::get('/dd','DupoController@dd');
-
 // URL(localhost/dupoにアクセスしたら、getでdupoContollerのdupoメソッドを呼び出す)
 Route::get('/dupo','DupoController@top');
+// URL(localhost/dupo/errorにアクセスしたら、getでdupoContollerのerrorメソッドを呼び出す)
+Route::get('/dupo/error','DupoController@error');
 
 // ##DuPoのCRUDルーティング
 // URL(localhost/dupo/createにアクセスしたら、getでdupoContollerのcreateメソッドを呼び出す)

@@ -33,6 +33,10 @@ class DupoController extends Controller
            return view('dupos.create');
         }
 
+        public function error(){
+           return view('dupos.error');
+        }
+
         public function edit($id){
             //idが無かったら例外処理を行う
             $nipo = Nipo::findOrFail($id);

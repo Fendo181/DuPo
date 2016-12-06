@@ -11,7 +11,7 @@ About me
 
 
 @section('aboutme')
-<h2>製作者:えんどぅー</h2>
+<h2  class="message" style="background:skyblue;">製作者:えんどぅー</h2>
 <p>年齢:23歳<p>
 <p>しいたけが食べれないです。</p>
 

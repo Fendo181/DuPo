@@ -10,7 +10,9 @@
 
 
 .title{
-    font-family: inherit;
+    font-size: 18px;
+    font-family:cursive,sans-serif;
+    font-weight:bolder;
 }
 
 .text{

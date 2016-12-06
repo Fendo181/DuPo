@@ -26,13 +26,18 @@ Dupo
 {{-- タイトルだけ表示する。 --}}
 <li>
     <p>投稿日:{{ $nipo->created_at }}</p>
-    <a href="{{ action('DupoController@show', $nipo->id) }}">『{{ $nipo->title }}』</a>
+    <div class="title">
+        <a href="{{ action('DupoController@show', $nipo->id) }}">『{{ $nipo->title }}』</a>
+    </div>
     <a href="{{ action('DupoController@edit', $nipo->id) }}" class="fs12"><i class="fa fa-fw fa-pencil" aria-hidden="true"></i></a>
+    <a href="{{ url('') }}" class="fs12"><i class="fa fa-fw fa-reply" aria-hidden="true"></i></a>
+    <a href="{{ url('#') }}" class="fs12"><i class="fa fa-fw fa-heart-o" aria-hidden="true"></i></i></a>
+    <a href="{{ url('/dupo/error') }}" class="fs12"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></i></a>
     <form action="{{ action('DupoController@destroy', $nipo->id) }}" id="form_{{ $nipo->id }}" method="post" style="display:inline">
        {{ csrf_field() }}
        {{ method_field('delete') }}
      <a href="#" data-id="{{ $nipo->id }}" onclick="deletePost(this);" class="fs12"><i class="fa fa-fw fa-times" aria-hidden="true"></i></a>
-   </form>
+    </form>
 </li>
 
 @empty
