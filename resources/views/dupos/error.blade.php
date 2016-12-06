@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-遠藤ブログ
+Errorページ
 @endsection
 
 
@@ -11,8 +11,8 @@
 
 
 @section('about')
-このページは、まだ作られてません。
-
+<h2  class="message" style="background:skyblue;">ページがまだ作られてません！</h2>
+もう少しお待ち下さい!!
 @endsection
 
 @section('back')
