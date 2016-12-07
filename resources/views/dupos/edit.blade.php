@@ -17,7 +17,7 @@ Edit
 <div class="center">
     <form method="post" action="{{ url('/dupo', $nipo->id)}}" >
       <!--Lalavel特有のCSRF対策をスルーするための対策(TOkenを仕込む)です。 -->
-      {{-- csrf_field( ) --}}
+      {{ csrf_field( ) }}
       {{ method_field('patch') }}
 
         <h3 class="title">タイトル</h3>
