@@ -13,8 +13,13 @@ class DupoController extends Controller
 
         public function top(){
             $nipos = Nipo::latest('created_at')->get();
-            // withでデータをviewへ渡す。
+
+            // 日本形式の時刻に合わせる。
+            // $date = $nipos->created_at;
+            // $time_japan = date('Y年n月j日', strtotime($date));
+            // // withでデータをviewへ渡す。
             return view('dupos.dupo')->with('nipos',$nipos);
+                                    //  ->with('time_japan',$time_japan);
 
         }
 
