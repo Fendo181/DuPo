@@ -6,7 +6,7 @@ Dupo
 
 
 @section('blog_title')
-<h1>今月のDuPo一覧表</h1>
+<h1>12月のDuPo一覧表</h1>
 @endsection
 
 <!-- 記事を書く -->
@@ -46,9 +46,9 @@ Dupo
                 <div class="card-title">
                     <a href="{{ action('DupoController@show', $nipo->id) }}">『{{ $nipo->title }}』</a>
                 </div>
-                <div class="card-text">
+                <!-- <div class="card-text">
                     {{ $nipo->body }}
-                </div>
+                </div> -->
                 <form action="{{ action('DupoController@destroy', $nipo->id) }}" id="form_{{ $nipo->id }}" method="post" style="display:inline">
                    {{ csrf_field() }}
                    {{ method_field('delete') }}
