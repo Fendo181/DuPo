@@ -37,6 +37,11 @@
         @yield('img1')
     </div> -->
 
+    {{-- head部分のtab_menus  --}}
+    <div class="container">
+        @yield('tab_menus_up')
+    </div>
+
     {{-- リンク ページ --}}
     <div class="container">
         @yield('about')@yield('aboutme')@yield('git')@yield('Dot')
@@ -47,6 +52,11 @@
         <div class="row">
             @yield('content')
         </div>
+    </div>
+
+    {{-- footer部分のtab_menus  --}}
+    <div class="container">
+        @yield('tab_menus_down')
     </div>
 
     {{-- バックリンク --}}

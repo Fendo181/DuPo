@@ -10,14 +10,26 @@ Dupo
 @endsection
 
 <!-- 記事を書く -->
-<span >
-    <a href="{{ url('/dupo/create') }}" class="fs12"><i class="fa fa-fw fa-pencil-square-o" aria-hidden="true"></i>New DuPo</a>
-</span>
 
-<div class="center">
-    <a href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
-</div>
-
+@section('tab_menus_up')
+<ul class="nav nav-tabs">
+       <li class="nav-item">
+           <a class="nav-link" href="{{ url('/dupo/create') }}" class="fs12"><i class="fa fa-fw fa-pencil-square-o" aria-hidden="true"></i>New DuPo</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="{{ url('/about') }}"><i class="fa fa-fw fa-question" aria-hidden="true"></i>DuPoとは</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="{{ url('/aboutme') }}"><i class="fa fa-fw fa-male" aria-hidden="true"></i>About me</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="https://github.com/Fendo181/DuPo"><i class="fa fa-fw fa-github" aria-hidden="true"></i>GitHub</a>
+       </li>
+</ul>
+@endsection
 
 @section('content')
 <!-- @foreach ($nipos as $nipo)
@@ -30,7 +42,7 @@ Dupo
 <div class="col-sm-4">
     <div class="card">
         <div class="card-block">
-            <li>
+            <li  style="list-style:none;">
                 <div class="card-title">
                     <a href="{{ action('DupoController@show', $nipo->id) }}">『{{ $nipo->title }}』</a>
                 </div>
@@ -42,7 +54,7 @@ Dupo
                    {{ method_field('delete') }}
                    <p><i>投稿日:{{ $nipo->created_at }}</i><p>
                    <a href="{{ action('DupoController@edit', $nipo->id) }}" class="fs12"><i class="fa fa-fw fa-pencil" aria-hidden="true"></i></a>
-                   <a href="{{ url('') }}" class="fs12"><i class="fa fa-fw fa-reply" aria-hidden="true"></i></a>
+                   <a href="{{ url('/dupo/error') }}" class="fs12"><i class="fa fa-fw fa-reply" aria-hidden="true"></i></a>
                    <a href="{{ url('/dupo/error') }}" class="fs12"><i class="fa fa-fw fa-heart-o" aria-hidden="true"></i></i></a>
                    <a href="#" data-id="{{ $nipo->id }}" onclick="deletePost(this);" class="fs12"><i class="fa fa-fw fa-times" aria-hidden="true"></i></a>
                 </form>
