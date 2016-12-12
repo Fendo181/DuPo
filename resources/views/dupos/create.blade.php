@@ -27,13 +27,13 @@ Add New
     <div class="form-groupe">
         <h3 class="title">今日のDuPo</h3>
         <p>
-            <textarea name="body" data-provide="markdown" class="form-control" placeholder="本文を入力してください" cols="10" rows="10">{{ old('body') }}</textarea>
+            <textarea name="body"  class="form-control" placeholder="本文を入力してください" cols="10" rows="10">{{ old('body') }}</textarea>
             @if ($errors->has('body'))
             <span class="error">{{ $errors->first('body') }}</span>
             @endif
         </p>
         <p>
-            <input type="button" class="btn btn-outline-primary" type="submit"   value="記事を投稿する。">
+            <input type="submit"  class="btn btn-outline-primary"   value="記事を投稿する。">
         </p>
     <div>
 </form>
