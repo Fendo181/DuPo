@@ -31,6 +31,7 @@ Dupo
        <li class="nav-item">
            <a class="nav-link" href="https://github.com/Fendo181/DuPo"><i class="fa fa-fw fa-github" aria-hidden="true"></i>GitHub</a>
        </li>
+       li
 </ul>
 @endsection
 
@@ -79,4 +80,5 @@ function deletePost(e) {
   }
 }
 </script>
+<script src="/js/app.js"></script>
 @endsection
