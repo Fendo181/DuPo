@@ -5,7 +5,7 @@ DuPo Page
 @endsection
 
 @section('content')
-<div class="col-sm-6">
+<div class="col-sm-12 col-md-12 col-lg-12">
     <h4>『{{ $nipo->title}}』</h4>
     <!-- 本文の中身をエスケープする。 -->
     <p>{!! nl2br(e($nipo->body)) !!}</p>
