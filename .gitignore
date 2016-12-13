@@ -5,6 +5,6 @@
 /.idea
 Homestead.json
 Homestead.yaml
-#.env
+.env
 /public/casablanca
 /public/bootstrap3
