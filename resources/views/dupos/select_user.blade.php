@@ -85,9 +85,13 @@
                 </div>
             </div>
         </div>
-        <div class="content">
-            <a href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
+        <div class="links">
+            <div class="content">
+                <a class="btn btn-outline-secondary" href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
+            </div>
+            <div class="content">
+                <a class="btn btn-outline-danger" href="{{ url('/dupo') }}">DuPo裏口(悪用厳禁)</a>
+            </div>
         </div>
-        <p class="content"><a href="{{ url('/dupo') }}">DuPo裏口(悪用厳禁)</a></p>
     </body>
 </html>
