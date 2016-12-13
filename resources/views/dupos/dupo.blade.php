@@ -23,6 +23,9 @@ Dupo
            <a class="nav-link" href="{{ url('/aboutme') }}"><i class="fa fa-fw fa-male" aria-hidden="true"></i>About me</a>
        </li>
        <li class="nav-item">
+           <a class="nav-link" href="{{ url('/dupo/user') }}"><i class="fa fa-fw fa-user-o" aria-hidden="true"></i>login page</a>
+       </li>
+       <li class="nav-item">
            <a class="nav-link" href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
        </li>
        <li class="nav-item">

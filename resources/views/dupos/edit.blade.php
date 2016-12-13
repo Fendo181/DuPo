@@ -14,6 +14,8 @@ Edit
     <div class="form-groupe">
       <!--Lalavel特有のCSRF対策をスルーするための対策(TOkenを仕込む)です。 -->
       {{ csrf_field() }}
+      {{ method_field('patch') }}
+
         <h3 class="title">タイトル</h3>
         <p>
             <input type="text"  class="form-control" name="title" placeholder="title"  value="{{ old('title',$nipo->title) }}">
@@ -35,7 +37,7 @@ Edit
         <p>
             <input type="submit"  class="btn btn-outline-primary"   value="記事を投稿する。">
         </p>
-    <div>
+    </div>
 </form>
 @endsection
 

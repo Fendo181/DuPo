@@ -21,13 +21,7 @@ About me
 @section('tab_menus_down')
 <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
-    </li>
-    <li class="nav-item">
          <a class="nav-link" href="{{ url('/dupo') }}"><i class="fa fa-fw fa-book" aria-hidden="true"></i>Back DuPo Page</a>
-     </li>
-     <li class="nav-item">
-         <a class="nav-link" href="{{ url('/dupo/create') }}" class="fs12"><i class="fa fa-fw fa-pencil-square-o" aria-hidden="true"></i>New DuPo</a>
      </li>
      <li class="nav-item">
          <a class="nav-link" href="{{ url('/about') }}"><i class="fa fa-fw fa-question" aria-hidden="true"></i>DuPoとは</a>

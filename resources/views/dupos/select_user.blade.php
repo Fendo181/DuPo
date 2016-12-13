@@ -5,11 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel DuPo</title>
+        <title>Select User Page</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        
+        <!-- Awsomeアイコン -->
+        <script src="https://use.fontawesome.com/3f882b3f5b.js"></script>
+        <!-- Bootstrap ver4.0 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
 
         <!-- Styles -->
         <style>
@@ -44,6 +49,7 @@
 
             .content {
                 text-align: center;
+                margin: 10px 0 0 0;
             }
 
             .title {
@@ -53,7 +59,7 @@
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 12px;
+                font-size: 18px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -63,35 +69,24 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
+        <div class="container">
             <div class="content">
                 <div class="title m-b-md">
-                    <p>Laravel 5.3</p>
-                    <h4>DuPo Coming すーん</h4>
+                    <p>DuPo</a>
                 </div>
-
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a class="btn btn-outline-success" href="{{ url('/dupo_auth') }}"><i class="fa fa-fw fa-user-o" aria-hidden="true"></i>ログインユーザ</a>
+                    <a class="btn btn-outline-info" href="{{ url('/guest_login') }}"><i class="fa fa-fw fa-user-secret " aria-hidden="true"></i>ゲストユーザ</a>
                 </div>
             </div>
+        </div>
+        <div class="content">
+            <a href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
         </div>
     </body>
 </html>

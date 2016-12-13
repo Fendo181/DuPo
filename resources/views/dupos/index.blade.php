@@ -128,7 +128,7 @@
                     <p>DuPo</a>
                 </div>
                 <div class="links">
-                    <a class="btn_a" href="{{ url('/dupo') }}"><i class="fa fa-fw fa-book" aria-hidden="true"></i>Let's DuPo</a>
+                    <a class="btn_a" href="{{ url('/select_user') }}"><i class="fa fa-fw fa-book" aria-hidden="true"></i>Let's DuPo</a>
                     <a class="btn_b" href="{{ url('/about') }}"><i class="fa fa-fw fa-question" aria-hidden="true"></i>DuPoとは</a>
                     <a class="btn_d" href="{{ url('/aboutme') }}"><i class="fa fa-fw fa-male" aria-hidden="true"></i>About me</a>
                     <a class="btn_c" href="https://github.com/Fendo181/DuPo"><i class="fa fa-fw fa-github" aria-hidden="true"></i>GitHub</a>

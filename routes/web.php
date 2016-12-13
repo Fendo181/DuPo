@@ -26,39 +26,24 @@ Route::get('/php',function(){
 
 // URL(localhost/)画面にアクセスしたら、にgetでIndexContollerのindexメソッドを呼び出す
 Route::get('/','IndexController@index');
-// URL(localhost/about)にアクセスしたら,getでIndexContorollerにaboutメソッドを呼び出す。
+Route::get('/select_user','IndexController@selectUser');
 Route::get('/about','IndexController@about');
-// URL(localhost/about)にアクセスしたら,getでIndexContorollerにaboutmeメソッドを呼び出す。
 Route::get('/aboutme','IndexController@aboutme');
 
+// ログインぺージ
+Route::get('/dupo/user', 'IndexController@userPage');
 
-
-// URL(localhost/dd)画面にアクセスしたら、にgetでdupoContollerのindexメソッドを呼び出す
-Route::get('/dd','DupoController@dd');
-// URL(localhost/dupoにアクセスしたら、getでdupoContollerのdupoメソッドを呼び出す)
+// 静的なページ
 Route::get('/dupo','DupoController@top');
-// URL(localhost/dupo/errorにアクセスしたら、getでdupoContollerのerrorメソッドを呼び出す)
 Route::get('/dupo/error','DupoController@error');
 
 // ##DuPoのCRUDルーティング
-// URL(localhost/dupo/createにアクセスしたら、getでdupoContollerのcreateメソッドを呼び出す)
 Route::get('/dupo/create','DupoController@create');
-//dupoのidを呼び出す際になんとしてでもshowメソッドに飛ぶ
 Route::get('/dupo/{id}','DupoController@show');
-
-// postで送られたきたデータをDBに挿入する。
-// URL(localhost/dupo/にアクセスしたら、dupoでdupoContollerのstoreメソッドを呼び出す)
 Route::post('/dupo/store','DupoController@store');
-
-//update画面の編集
 Route::patch('/dupo/{id}','DupoController@update');
-
-//Edit画面の編集
 Route::get('/dupo/{id}/edit','DupoController@edit');
-
-//deleteメソッド
 Route::delete('/dupo/{id}','DupoController@destroy');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index');
+Route::get('/dupo_auth', 'HomeController@index');

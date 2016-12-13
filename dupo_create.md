@@ -652,3 +652,26 @@ class NipoRequest extends FormRequest
 ```
 
 Todo:バリデーションエラーメッセージを綺麗にしたい
+
+## 認証
+
+DBのuserテーブルを作成する。
+
+```
+
+mysql> mysql> desc users;
++----------------+------------------+------+-----+---------+----------------+
+| Field          | Type             | Null | Key | Default | Extra          |
++----------------+------------------+------+-----+---------+----------------+
+| id             | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| name           | varchar(255)     | NO   |     | NULL    |                |
+| email          | varchar(255)     | NO   | UNI | NULL    |                |
+| password       | varchar(255)     | NO   |     | NULL    |                |
+| remember_token | varchar(100)     | YES  |     | NULL    |                |
+| created_at     | timestamp        | YES  |     | NULL    |                |
+| updated_at     | timestamp        | YES  |     | NULL    |                |
++----------------+------------------+------+-----+---------+----------------+
+7 rows in set (0.01 sec)
+
+
+```
