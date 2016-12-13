@@ -653,6 +653,34 @@ class NipoRequest extends FormRequest
 
 Todo:バリデーションエラーメッセージを綺麗にしたい
 
+## niposテーブル
+
+```
+create table nipos(
+id int UNSIGNED not null auto_increment primary key,
+title varchar(255) not null,
+body text not null,
+created_at timestamp null,
+updated_at timestamp null,
+summary varchar(255) null
+);
+```
+
+## usersテーブル(ログイン)
+```
+create table users(
+id int UNSIGNED not null auto_increment primary key,
+name varchar(255) not null,
+email varchar(255) not null UNIQUE,
+password varchar(255) not null,
+remember_token varchar(100) null,
+created_at timestamp null,
+updated_at timestamp null
+);
+
+
+```
+
 ## 認証
 
 DBのuserテーブルを作成する。

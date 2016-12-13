@@ -53,9 +53,9 @@
                                 <button type="submit" class="btn btn-primary">
                                     ログインする。
                                 </button>
-                                <a class="btn btn-link" href="{{ url('/password/reset') }}">
+                                <!-- <a class="btn btn-link" href="{{ url('/password/reset') }}">
                                     パスワードを忘れましたか?
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                     </form>
