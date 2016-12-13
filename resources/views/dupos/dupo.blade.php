@@ -17,13 +17,13 @@ Dupo
            <a class="nav-link" href="{{ url('/dupo/create') }}" class="fs12"><i class="fa fa-fw fa-pencil-square-o" aria-hidden="true"></i>New DuPo</a>
        </li>
        <li class="nav-item">
-           <a class="nav-link" href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
-       </li>
-       <li class="nav-item">
            <a class="nav-link" href="{{ url('/about') }}"><i class="fa fa-fw fa-question" aria-hidden="true"></i>DuPoとは</a>
        </li>
        <li class="nav-item">
            <a class="nav-link" href="{{ url('/aboutme') }}"><i class="fa fa-fw fa-male" aria-hidden="true"></i>About me</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
        </li>
        <li class="nav-item">
            <a class="nav-link" href="https://github.com/Fendo181/DuPo"><i class="fa fa-fw fa-github" aria-hidden="true"></i>GitHub</a>
@@ -39,7 +39,7 @@ Dupo
 {{-- ここで配列形式の$nipoをnipoで要素を抜き出す --}}
 @forelse ($nipos as $nipo)
 {{-- タイトルだけ表示する。 --}}
-<div class="col-sm-4">
+<div class="col-sm-4  col-md-4 col-lg-3">
     <div class="card">
         <div class="card-block">
             <li  style="list-style:none;">

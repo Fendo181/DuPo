@@ -58,3 +58,7 @@ Route::get('/dupo/{id}/edit','DupoController@edit');
 
 //deleteメソッド
 Route::delete('/dupo/{id}','DupoController@destroy');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
