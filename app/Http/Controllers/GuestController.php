@@ -30,5 +30,14 @@ class GuestController extends Controller
                                 //  ->with('time_japan',$time_japan);
     }
 
+    public function about(){
+        return view('guest.about');
+    }
+
+    // about meページ
+    public function aboutme(){
+        return view('guest.aboutme');
+    }
+
 
 }

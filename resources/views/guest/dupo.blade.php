@@ -14,10 +14,10 @@ Dupo
 @section('tab_menus_up')
 <ul class="nav nav-tabs">
        <li class="nav-item">
-           <a class="nav-link" href="{{ url('/about') }}"><i class="fa fa-fw fa-question" aria-hidden="true"></i>DuPoとは</a>
+           <a class="nav-link" href="{{ url('/guest_about') }}"><i class="fa fa-fw fa-question" aria-hidden="true"></i>DuPoとは</a>
        </li>
        <li class="nav-item">
-           <a class="nav-link" href="{{ url('/aboutme') }}"><i class="fa fa-fw fa-male" aria-hidden="true"></i>About me</a>
+           <a class="nav-link" href="{{ url('/guest_aboutme') }}"><i class="fa fa-fw fa-male" aria-hidden="true"></i>About me</a>
        </li>
        <li class="nav-item">
            <a class="nav-link" href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>

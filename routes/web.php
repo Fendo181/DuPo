@@ -53,6 +53,8 @@ Route::delete('/dupo/{id}','DupoController@destroy');
 // Guestページ
 Route::get('/guest_dupo','GuestController@top');
 Route::get('/guest_dupo/{id}','GuestController@show');
+Route::get('/guest_about','GuestController@about');
+Route::get('/guest_aboutme','GuestController@aboutme');
 
 
 Auth::routes();
