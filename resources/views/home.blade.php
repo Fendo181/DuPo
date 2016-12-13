@@ -10,6 +10,9 @@
                 <div class="panel-body">
                     現在ログイン中です！
                 </div>
+                <li class="nav-item" style="list-style:none;">
+                    <a class="nav-link" href="{{ url('/dupo') }}"><i class="fa fa-fw fa-book" aria-hidden="true"></i>Back DuPo Page</a>
+                </li>
             </div>
         </div>
     </div>

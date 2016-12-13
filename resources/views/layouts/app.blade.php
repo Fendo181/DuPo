@@ -12,6 +12,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="\assets\css\app.css">
+    <!-- Awsomeアイコン -->
+    <script src="https://use.fontawesome.com/3f882b3f5b.js"></script>
+
 
     <!-- Scripts -->
     <script>
