@@ -23,6 +23,7 @@ class DupoController extends Controller
 
         }
 
+
         // 引数に$idを受け取る。
         public function show($id){
             // 見つかったらとりあえず、とりあえず使っまえて来る。

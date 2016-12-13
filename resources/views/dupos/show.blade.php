@@ -15,7 +15,10 @@ DuPo Page
 @section('tab_menus_down')
 <ul class="nav nav-tabs">
     <li class="nav-item">
-       <a class="nav-link" href="{{ url('/guest_dupo') }}"><i class="fa fa-fw fa-book" aria-hidden="true"></i>Back DuPo Page</a>
+        <a class="nav-link" href="{{ action('DupoController@edit', $nipo->id) }}" class="fs12"><i class="fa fa-pencil"></i>編集する</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('/dupo') }}"><i class="fa fa-fw fa-book" aria-hidden="true"></i>Back DuPo Page</a>
     </li>
 </ul>
 @endsection

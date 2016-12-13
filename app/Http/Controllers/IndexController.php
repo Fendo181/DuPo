@@ -21,12 +21,7 @@ class IndexController extends Controller
     public function aboutme(){
         return view('dupos.aboutme');
     }
-
-    // select userページ
-    public function selectUser(){
-        return view('dupos.select_user');
-    }
-
+    
     // user page
     public function userPage()
     {
