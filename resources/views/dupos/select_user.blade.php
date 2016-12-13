@@ -81,7 +81,7 @@
                 </div>
                 <div class="links">
                     <a class="btn btn-outline-success" href="{{ url('/dupo_auth') }}"><i class="fa fa-fw fa-user-o" aria-hidden="true"></i>ログインユーザ</a>
-                    <a class="btn btn-outline-info" href="{{ url('/guest_login') }}"><i class="fa fa-fw fa-user-secret " aria-hidden="true"></i>ゲストユーザ</a>
+                    <a class="btn btn-outline-info" href="{{ url('/guest_dupo') }}"><i class="fa fa-fw fa-user-secret " aria-hidden="true"></i>ゲストユーザ</a>
                 </div>
             </div>
         </div>
