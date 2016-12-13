@@ -88,5 +88,6 @@
         <div class="content">
             <a href="{{ url('/') }}"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Back Top Page</a>
         </div>
+        <p class="content"><a href="{{ url('/dupo') }}">DuPo裏口(悪用厳禁)</a></p>
     </body>
 </html>
