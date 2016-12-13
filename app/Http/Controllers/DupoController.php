@@ -23,6 +23,9 @@ class DupoController extends Controller
 
         }
 
+        public function top_ura(){
+            return redirect('/dupo')->with('flash_message', 'root権限を手に入れました!');
+        }
 
         // 引数に$idを受け取る。
         public function show($id){

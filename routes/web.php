@@ -38,6 +38,7 @@ Route::get('/dupo/error','DupoController@error');
 Route::get('/dupo_ura','DupoController@top_ura');
 
 
+
 // ##DuPoのCRUDルーティング(1)
 Route::get('/dupo/create','DupoController@create');
 Route::post('/dupo/store','DupoController@store');
@@ -45,6 +46,10 @@ Route::get('/dupo/{id}','DupoController@show');
 Route::patch('/dupo/{id}','DupoController@update');
 Route::get('/dupo/{id}/edit','DupoController@edit');
 Route::delete('/dupo/{id}','DupoController@destroy');
+
+
+
+
 // Guestページ
 Route::get('/guest_dupo','GuestController@top');
 Route::get('/guest_dupo/{id}','GuestController@show');
