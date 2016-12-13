@@ -132,7 +132,7 @@
                     <p>DuPo</a>
                 </div>
                 <div class="links">
-                    <a class="btn_a" href="{{ url('/dupo_auth') }}"><i class="fa fa-fw fa-address-card-o" aria-hidden="true"></i>ログインユーザ</a>
+                    <a class="btn_a" href="{{ url('/dupo_auth') }}"><i class="fa fa-fw fa-address-card-o" aria-hidden="true"></i>ログイン</a>
                     <a class="btn_b " href="{{ url('/guest_dupo') }}"><i class="fa fa-fw  fa-user-o" aria-hidden="true"></i>ゲストユーザ</a>
                     <a class="btn_d" href="{{ url('/dupo_ura') }}"><i class="fa fa-fw fa-user-secret " aria-hidden="true"></i>DuPo裏口</a>
                     <a class="btn_c" href="https://github.com/Fendo181/DuPo"><i class="fa fa-fw fa-github" aria-hidden="true"></i>GitHub</a>
