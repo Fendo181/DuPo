@@ -21,11 +21,16 @@ class IndexController extends Controller
     public function aboutme(){
         return view('dupos.aboutme');
     }
-    
+
     // user page
     public function userPage()
     {
         return view('home');
+    }
+
+    // errorページ
+    public function error(){
+       return view('dupos.error');
     }
 
 }

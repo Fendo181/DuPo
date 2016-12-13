@@ -23,32 +23,25 @@ Route::get('/php',function(){
 
 
 //## DuPoのTOPルーティング
-
-// URL(localhost/)画面にアクセスしたら、にgetでIndexContollerのindexメソッドを呼び出す
 Route::get('/','IndexController@index');
 Route::get('/about','IndexController@about');
 Route::get('/aboutme','IndexController@aboutme');
+Route::get('/dupo/error','IndexController@error');
 
 // ログインぺージ
 Route::get('/dupo/user', 'IndexController@userPage');
 
-// 静的なページ
-Route::get('/dupo','DupoController@top');
-Route::get('/dupo/error','DupoController@error');
+// DuPo裏ページ
 Route::get('/dupo_ura','DupoController@top_ura');
 
-
-
-// ##DuPoのCRUDルーティング(1)
+// DuPoCRUD操作
+Route::get('/dupo','DupoController@top');
 Route::get('/dupo/create','DupoController@create');
 Route::post('/dupo/store','DupoController@store');
 Route::get('/dupo/{id}','DupoController@show');
 Route::patch('/dupo/{id}','DupoController@update');
 Route::get('/dupo/{id}/edit','DupoController@edit');
 Route::delete('/dupo/{id}','DupoController@destroy');
-
-
-
 
 // Guestページ
 Route::get('/guest_dupo','GuestController@top');
