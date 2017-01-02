@@ -6,7 +6,7 @@ Dupo
 
 
 @section('blog_title')
-<h1>12月のDuPo一覧表</h1>
+<h1>{{ $year_month }}のDuPo一覧表</h1>
 @endsection
 
 <!-- 記事を書く -->

@@ -12,8 +12,14 @@ class DupoController extends Controller
 {
 
         public function top(){
-            $nipos = Nipo::latest('created_at')->get();
-            return view('dupos.dupo')->with('nipos',$nipos);
+
+            $month = date('m');
+            $year_month = date("Y年m月");
+            // $nipos = Nipo::latest('created_at')->get();
+            $nipos = Nipo::latest()->whereMonth('created_at', '=', $month)->get();
+
+            return view('dupos.dupo')->with('nipos',$nipos)
+                                     ->with('year_month',$year_month);
 
         }
 
