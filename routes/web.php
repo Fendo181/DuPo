@@ -52,3 +52,5 @@ Route::get('/guest_aboutme','GuestController@aboutme');
 
 Auth::routes();
 Route::get('/dupo_auth', 'HomeController@index');
+//
+Route::get('/prevLink','DupoController@prevLink');

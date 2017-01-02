@@ -68,12 +68,21 @@ Dupo
 <li>No dupo! Sorry</li>
 @endforelse
 
+
 <script>
 function deletePost(e) {
-  'use strict';
-  if (confirm('記事を本当に削除しますか?')) {
+    'use strict';
+    if (confirm('記事を本当に削除しますか?')) {
     document.getElementById('form_' + e.dataset.id).submit();
   }
 }
 </script>
+@endsection
+
+@section('back_months')
+<div class="btn-group" >
+    <button class="btn btn-secondary ">Next</button>
+    <button class="btn btn-secondary "><a href="{{ url('/dupo') }}">Now</a></button>
+    <button class="btn btn-secondary float-right"><a href="{{ url('/prevLink') }}">Prev</a></button>
+</div>
 @endsection

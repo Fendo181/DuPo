@@ -59,14 +59,14 @@
         @yield('tab_menus_down')
     </div>
 
+    {{-- monthリンク --}}
+    <div class="mx-auto" style="width: 200px;">
+        @yield('back_months')
+    </div>
+
     {{-- バックリンク --}}
     <div class="container">
         @yield('back')
     </div>
-
-
-
-
-
 </body>
 </html>

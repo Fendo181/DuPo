@@ -23,8 +23,19 @@ class DupoController extends Controller
 
         }
 
+
         public function top_ura(){
             return redirect('/dupo')->with('flash_message', 'root権限を手に入れました!');
+        }
+
+        public function prevLink(){
+            $month = date('m', strtotime(date('Y-m-1').' -1 month'));
+            $year_month = date("Y年".$month."月");
+            // $nipos = Nipo::latest('created_at')->get();
+            $nipos = Nipo::latest()->whereMonth('created_at', '=', $month)->get();
+
+            return view('dupos.dupo')->with('nipos',$nipos)
+                                     ->with('year_month',$year_month);
         }
 
         public function create(){
