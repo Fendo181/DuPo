@@ -6,7 +6,7 @@ Dupo
 
 
 @section('blog_title')
-<h1>12月のDuPo一覧表</h1>
+<h1>{{ $year_month }}のDuPo一覧表</h1>
 @endsection
 
 <!-- 記事を書く -->
@@ -59,4 +59,11 @@ Dupo
 <li>No dupo! Sorry</li>
 @endforelse
 
+@endsection
+
+@section('back_months')
+<div class="btn-group" >
+    <a class="btn btn-link" href="{{ url('/dupo') }}" role="button">NOW</a>
+    <a class="btn btn-link" href="{{ url('/prevLink') }}"  role="button">PREV<i class="fa fa-fw fa-caret-right" aria-hidden="true"></i></a>
+</div>
 @endsection

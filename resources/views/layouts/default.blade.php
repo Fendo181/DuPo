@@ -60,7 +60,7 @@
     </div>
 
     {{-- monthリンク --}}
-    <div class="mx-auto" style="width: 200px;">
+    <div class="mx-auto" style="width: 200px; text-align: center;">
         @yield('back_months')
     </div>
 

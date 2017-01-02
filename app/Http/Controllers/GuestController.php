@@ -18,15 +18,23 @@ class GuestController extends Controller
 
     public function top()
     {
-        $nipos = Nipo::latest('created_at')->get();
-        // 日本形式の時刻に合わせる。
-        // $date = $nipos->created_at;
-        // $time_japan = date('Y年n月j日', strtotime($date));
-        // // withでデータをviewへ渡す。
-        return view('guest.dupo')->with('nipos',$nipos);
-                                //  ->with('time_japan',$time_japan);
+        $month = date('m');
+        $year_month = date("Y年m月");
+        // $nipos = Nipo::latest('created_at')->get();
+        $nipos = Nipo::latest()->whereMonth('created_at', '=', $month)->get();
+        return view('guest.dupo')->with('nipos',$nipos)
+                                 ->with('year_month',$year_month);
     }
 
+    public function prevLink()
+    {
+        $month = date('m', strtotime(date('Y-m-1').' -1 month'));
+        $year = date('Y', strtotime(date('Y-m-1').' -1 month'));
+        $year_month = date($year."年".$month."月");
+        $nipos = Nipo::latest()->whereMonth('created_at', '=', $month)->get();
+        return view('guest.dupo')->with('nipos',$nipos)
+                                 ->with('year_month',$year_month);
+    }
     public function about()
     {
         return view('guest.about');

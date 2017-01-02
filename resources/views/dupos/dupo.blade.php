@@ -81,8 +81,7 @@ function deletePost(e) {
 
 @section('back_months')
 <div class="btn-group" >
-    <button class="btn btn-secondary ">Next</button>
-    <button class="btn btn-secondary "><a href="{{ url('/dupo') }}">Now</a></button>
-    <button class="btn btn-secondary float-right"><a href="{{ url('/prevLink') }}">Prev</a></button>
+    <a class="btn btn-link" href="{{ url('/dupo') }}" role="button">NOW</a>
+    <a class="btn btn-link" href="{{ url('/prevLink') }}"  role="button">PREV<i class="fa fa-fw fa-caret-right" aria-hidden="true"></i></a>
 </div>
 @endsection
