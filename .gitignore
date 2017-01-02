@@ -8,3 +8,6 @@ Homestead.yaml
 .env
 /public/casablanca
 /public/bootstrap3
+/public/tmp
+/public/PHPStudy1.0
+/public/PHPStudy3.0
