@@ -10,18 +10,15 @@ class GuestController extends Controller
 {
     //
 
-    public function show($id){
-        // 見つかったらとりあえず、とりあえず使っまえて来る。
-        // $nipos = Nipo::find('id');
-
-        // 見つからない場合は例外を投げる。
+    public function show($id)
+    {
         $nipo = Nipo::findOrFail($id);
         return view('guest.show')->with('nipo',$nipo);
     }
 
-    public function top(){
+    public function top()
+    {
         $nipos = Nipo::latest('created_at')->get();
-
         // 日本形式の時刻に合わせる。
         // $date = $nipos->created_at;
         // $time_japan = date('Y年n月j日', strtotime($date));
@@ -30,12 +27,14 @@ class GuestController extends Controller
                                 //  ->with('time_japan',$time_japan);
     }
 
-    public function about(){
+    public function about()
+    {
         return view('guest.about');
     }
 
     // about meページ
-    public function aboutme(){
+    public function aboutme()
+    {
         return view('guest.aboutme');
     }
 

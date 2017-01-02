@@ -8,17 +8,20 @@ use App\Http\Controllers\Controller;
 class IndexController extends Controller
 {
 
-    public function index(){
+    public function index()
+    {
         return view('dupos.index');
     }
 
     // about ページ
-    public function about(){
+    public function about()
+    {
         return view('dupos.about');
     }
 
     // about meページ
-    public function aboutme(){
+    public function aboutme()
+    {
         return view('dupos.aboutme');
     }
 
