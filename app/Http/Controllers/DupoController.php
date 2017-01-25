@@ -11,11 +11,13 @@ use App\Nipo;
 class DupoController extends Controller
 {
 
+        // 裏ページ表示メソッド
         public function top_ura()
         {
             return redirect('/dupo')->with('flash_message', 'root権限を手に入れました!');
         }
 
+        
         public function top()
         {
             $month = date('m');
