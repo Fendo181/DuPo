@@ -30,7 +30,7 @@ Route::get('/aboutme','IndexController@aboutme');
 Route::get('/dupo/error','IndexController@error');
 
 // ログインぺージ
-Route::get('/user', 'IndexController@userPage');
+Route::get('/user', 'LoginUserController@index');
 
 // DuPo裏ページ
 Route::get('/dupo_ura','DupoController@top_ura');
@@ -52,4 +52,5 @@ Route::get('/guest_aboutme','GuestController@aboutme');
 
 
 Auth::routes();
+//ログイン後のユーザページ
 Route::get('/dupo_auth', 'LoginUserController@index');

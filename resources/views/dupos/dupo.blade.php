@@ -17,7 +17,7 @@ Dupo
            <a class="nav-link" href="{{ url('/dupo/create') }}" class="fs12"><i class="fa fa-fw fa-pencil-square-o" aria-hidden="true"></i>New DuPo</a>
        </li>
        <li class="nav-item">
-           <a class="nav-link" href="{{ url('/dupo/user') }}"><i class="fa fa-fw fa-user-o" aria-hidden="true"></i>login page</a>
+           <a class="nav-link" href="{{ url('/user') }}"><i class="fa fa-fw fa-user-o" aria-hidden="true"></i>login page</a>
        </li>
        <li class="nav-item">
            <a class="nav-link" href="{{ url('/about') }}"><i class="fa fa-fw fa-question" aria-hidden="true"></i>DuPoとは</a>

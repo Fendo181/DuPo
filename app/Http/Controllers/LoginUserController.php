@@ -21,9 +21,10 @@ class LoginUserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    //  ログイン後、ユーザページへ遷移する。
     public function index()
     {
-        return redirect(user);
+        return view('auth.user');
     }
 
 
