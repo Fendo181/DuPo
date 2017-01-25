@@ -701,21 +701,4 @@ mysql> mysql> desc users;
 +----------------+------------------+------+-----+---------+----------------+
 7 rows in set (0.01 sec)
 
-
-```
-
-```
-mysql> desc users;
-+----------------+------------------+------+-----+---------+----------------+
-| Field          | Type             | Null | Key | Default | Extra          |
-+----------------+------------------+------+-----+---------+----------------+
-| id             | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
-| name           | varchar(255)     | NO   |     | NULL    |                |
-| email          | varchar(255)     | NO   | UNI | NULL    |                |
-| password       | varchar(255)     | NO   |     | NULL    |                |
-| remember_token | varchar(100)     | YES  |     | NULL    |                |
-| created_at     | timestamp        | YES  |     | NULL    |                |
-| updated_at     | timestamp        | YES  |     | NULL    |                |
-+----------------+------------------+------+-----+---------+----------------+
-
 ```
