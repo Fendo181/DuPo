@@ -27,4 +27,9 @@ class LoginUserController extends Controller
         return view('auth.user');
     }
 
+    public function NewUserPage()
+    {
+        return view('auth.newuser');
+    }
+
 }
