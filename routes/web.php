@@ -20,7 +20,8 @@ Route::get('/php',function(){
     return phpinfo();
 });
 
-
+//前の月に戻れるようなルーティング
+Route::get('/prevLink','DupoController@prevLink');
 
 //## DuPoのTOPルーティング
 Route::get('/','IndexController@index');
@@ -29,7 +30,7 @@ Route::get('/aboutme','IndexController@aboutme');
 Route::get('/dupo/error','IndexController@error');
 
 // ログインぺージ
-Route::get('/dupo/user', 'IndexController@userPage');
+Route::get('/user', 'IndexController@userPage');
 
 // DuPo裏ページ
 Route::get('/dupo_ura','DupoController@top_ura');
@@ -51,6 +52,4 @@ Route::get('/guest_aboutme','GuestController@aboutme');
 
 
 Auth::routes();
-Route::get('/dupo_auth', 'HomeController@index');
-//
-Route::get('/prevLink','DupoController@prevLink');
+Route::get('/dupo_auth', 'LoginUserController@index');
