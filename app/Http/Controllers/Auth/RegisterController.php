@@ -27,7 +27,8 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/user';
+    //  登録完了後にとばすURL
+    protected $redirectTo = '/newuser';
 
     /**
      * Create a new controller instance.

@@ -29,8 +29,7 @@ Route::get('/about','IndexController@about');
 Route::get('/aboutme','IndexController@aboutme');
 Route::get('/dupo/error','IndexController@error');
 
-// ログインぺージ
-Route::get('/user', 'LoginUserController@index');
+
 
 // DuPo裏ページ
 Route::get('/dupo_ura','DupoController@top_ura');
@@ -53,4 +52,7 @@ Route::get('/guest_aboutme','GuestController@aboutme');
 
 Auth::routes();
 //ログイン後のユーザページ
-Route::get('/dupo_auth', 'LoginUserController@index');
+Route::get('/dupo_auth', 'LoginUserController@UserPage');
+
+// ログイン後のプロフィールぺージ
+Route::get('/user', 'LoginUserController@UserPage');
