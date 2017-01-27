@@ -11,6 +11,7 @@ return array(
     'CreateUsersTable' => $baseDir . '/database/migrations/2016_12_13_134411_create_users_table.php',
     'CreatedNiposTable' => $baseDir . '/database/migrations/2016_11_23_082850_created_nipos_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
+    'DropSummaryFromNipos' => $baseDir . '/database/migrations/2017_01_28_085522_drop_summary_from_nipos.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
