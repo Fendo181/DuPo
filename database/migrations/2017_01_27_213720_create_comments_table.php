@@ -15,17 +15,16 @@ class CreateCommentsTable extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
-            // １行コメント
+            $table->integer('post_id')->unsigned();
             $table->string('body');
             // コメントをpostに対して紐付けたい
-            $table->string('post_id')->unsigned();
             $table->timestamps();
 
             //外部キーを創って、niposテーブルと紐付ける。
 
             $table->foreign('post_id') ## commentsのpost_id
                   ->references('id') ## postsのid
-                  ->on('posts') ## 上のidのtableはposts
+                  ->on('nipos') ## 上のidのtableはposts
                   ->onDelete('cascade'); ## これでその投稿が消えたら、こちらのtableも消えるようにした。
         });
     }
