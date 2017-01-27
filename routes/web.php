@@ -16,7 +16,7 @@
 // });
 
 //phponfo
-Route::get('/php',function(){
+Route::get('/',function(){
     return phpinfo();
 });
 
