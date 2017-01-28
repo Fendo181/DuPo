@@ -15,6 +15,7 @@ class DropSummaryFromNipos extends Migration
     {
         Schema::table('nipos', function (Blueprint $table) {
             //
+            $table->dropColumn('summary');
         });
     }
 
@@ -27,6 +28,7 @@ class DropSummaryFromNipos extends Migration
     {
         Schema::table('nipos', function (Blueprint $table) {
             //
+            $table->string('summary')->nullable();
         });
     }
 }
