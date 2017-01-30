@@ -16,7 +16,8 @@ class CreateCommentsTable extends Migration
         Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
             // $table->integer('post_id')->unsigned(); # これだとエラーが起きる
-            $table->integer('nipo_id')->unsigned(); # これだとエラーが起きる
+            $table->integer('nipo_id')->unsigned(); # マイナスは大丈夫とする。
+            $table->string('name');
             $table->string('body');
             $table->timestamps();
 
