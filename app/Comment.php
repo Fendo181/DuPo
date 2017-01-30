@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
     //
-    protected $fillable = ['body'];
+    protected $fillable = ['name','body'];
 
     //comment とnipoの関係性をここで定義する。
     public function nipo(){

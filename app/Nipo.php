@@ -11,9 +11,9 @@ class Nipo extends Model
     protected $fillable = ['title', 'body'];
 
     //comment と post の関係性をここで定義する。
-    public function post(){
+    public function comments(){
         //Nipoモデルからcommentsモデルのデータを引っ張ってくる(hasmany)
-        return $this ->hasMany('APP\comment');
+            return $this ->hasMany('App\Comment');
     }
 
 }
