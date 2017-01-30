@@ -31,7 +31,7 @@ Route::get('/guest_about','GuestController@about');
 Route::get('/guest_aboutme','GuestController@aboutme');
 
 //ログイン成功した人だけアクセスできる。
-Route::group(['middleware' => 'auth'], function () {
+// Route::group(['middleware' => 'auth'], function () {
 
     // DuPo裏ページ
     Route::get('/dupo_ura','DupoController@top_ura');
@@ -52,7 +52,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::patch('/dupo/{id}','DupoController@update');
     Route::get('/dupo/{id}/edit','DupoController@edit');
     Route::delete('/dupo/{id}','DupoController@destroy');
-});
+
+    //コメント操作
+    Route::post('/dupo/{nipo}/comments/','CommentsController@store');
+
+// });
 
 
 Auth::routes();
